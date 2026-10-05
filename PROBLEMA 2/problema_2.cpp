@@ -3,7 +3,7 @@ void problema_2(int n) {
     volatile int dummy = 0;
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            dummy++; // Simula el trabajo constante de la iteración
+            dummy++;
             break;
         }
     }

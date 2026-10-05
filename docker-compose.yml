@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  plotter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: benchmark-plotter:latest
+    container_name: benchmark_plotter
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
