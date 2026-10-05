@@ -19,7 +19,7 @@ double benchmark(Func&& func, Args&&... args) {
 }
 
 int main() {
-    const std::vector<int> test_sizes = {1, 10, 100, 1000, 10000, 100000, 1000000}[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span);
+    const std::vector<int> test_sizes = {1, 10, 100, 1000, 10000, 100000};
 
     std::ofstream csv_file("benchmark_results.csv");
     csv_file << "n,Problema_1,Problema_2,Problema_3\n";
